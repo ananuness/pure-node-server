@@ -65,7 +65,7 @@ não há uso de um banco de dados);
     "name": "Vivian"
   }
   
-  // HTTP status code 400
+  // HTTP status code 404
   {
     "error": "User not found"
   }
@@ -100,7 +100,7 @@ não há uso de um banco de dados);
   ```js
   // HTTP status code 204 (No content)
   
-  // HTTP status code 400
+  // HTTP status code 404
   {
     "error": "User not found"
   }
@@ -114,7 +114,7 @@ não há uso de um banco de dados);
     deleted: true 
   }
   
-  // HTTP status code 400
+  // HTTP status code 404
   {
     "error": "User not found"
   }

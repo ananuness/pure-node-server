@@ -17,7 +17,7 @@ const UserController = {
     const foundUser = users.find(user => user.id === Number(id));
 
     if (!foundUser) {
-      return response.message(400, { error: 'User not found' });
+      return response.message(404, { error: 'User not found' });
     }
     
     return response.message(200, foundUser);
@@ -41,7 +41,7 @@ const UserController = {
     const userExists = users.find(user => user.id === id);
 
     if (!userExists) {
-      return response.message(400, { error: 'User not found' });
+      return response.message(404, { error: 'User not found' });
     }
 
     users = users.map(user => 
@@ -57,7 +57,7 @@ const UserController = {
     const userExists = users.find(user => user.id === id);
 
     if (!userExists) {
-      return response.message(400, { error: 'User not found' });
+      return response.message(404, { error: 'User not found' });
     }
 
     users = users.filter(user => user.id !== id);
